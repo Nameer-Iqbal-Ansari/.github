@@ -15,8 +15,8 @@ This repository contains the code and resources for this project — implementin
 
 ### Documents
 
-- [Final Year Project Report — MultiCore SoC For SMP Linux](docs/MULTICORE_SoC_For_SMP_Linux.pdf) — full write-up of the OpenPiton+Ariane architecture, FPGA implementation, software flow, and results.
-- [OpenPiton CHI Migration Proposal](docs/OpenPiton_CHI_Migration_Proposal.pdf) — phased RTL design proposal for migrating OpenPiton's native coherence protocol to AMBA CHI.
+- [Final Year Project Report — MultiCore SoC For SMP Linux](../docs/MULTICORE_SoC_For_SMP_Linux.pdf) — full write-up of the OpenPiton+Ariane architecture, FPGA implementation, software flow, and results.
+- [OpenPiton CHI Migration Proposal](../docs/OpenPiton_CHI_Migration_Proposal.pdf) — phased RTL design proposal for migrating OpenPiton's native coherence protocol to AMBA CHI.
 
 *(Links assume both PDFs are placed in a `docs/` folder in this repo; update the paths if you store them elsewhere.)*
 
@@ -24,7 +24,7 @@ This repository contains the code and resources for this project — implementin
 
 ### Architecture: OpenPiton + Ariane
 
-*Full details in the [FYP Project Report](docs/MULTICORE_SoC_For_SMP_Linux.pdf).*
+*Full details in the [FYP Project Report](../docs/MULTICORE_SoC_For_SMP_Linux.pdf).*
 
 The SoC is generated using **OpenPiton**, an open-source framework for building scalable, cache-coherent manycore chips, together with **Ariane**, a 6-stage, single-issue, 64-bit RISC-V core (RV64GC, implementing the I, M, and C extensions and M/S/U privilege levels).
 
@@ -60,7 +60,7 @@ The SoC is generated using **OpenPiton**, an open-source framework for building 
 
 Beyond the current implementation, this repository also tracks a **phased proposal to migrate OpenPiton's native coherence protocol to AMBA CHI (Coherent Hub Interface)**, the industry-standard directory-based coherence protocol used across ARM and increasingly RISC-V multi-core/chiplet systems.
 
-*Full detail — including the field-level packet mapping tables, RTL change inventory, and TSO proof — is in the [OpenPiton CHI Migration Proposal](docs/OpenPiton_CHI_Migration_Proposal.pdf).*
+*Full detail — including the field-level packet mapping tables, RTL change inventory, and TSO proof — is in the [OpenPiton CHI Migration Proposal](../docs/OpenPiton_CHI_Migration_Proposal.pdf).*
 
 **Motivation.** OpenPiton's native protocol is functionally complete and well-tested, but it is bespoke: its packet formats, conflict handling, and node roles exist only inside OpenPiton. Notable gaps include:
 - Coherence transaction conflicts are undocumented in the current specification.
